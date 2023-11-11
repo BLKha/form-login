@@ -1,0 +1,131 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    background-image: url(https://th.bing.com/th/id/OIP.DiNOSYmOrwUpVs7iOcLUCgHaEK?pid=ImgDet&rs=1);
+}
+
+body {
+    font-family: "Roboto",sans-serif;
+}
+
+:root {
+    
+    --yellow:#EEEE00;
+    --red:#FF0000;
+    --blue:#33CCFF;
+    --blue-l:#99FFFF;
+    --gray:#4F4F4F;
+    --smooth: all .3s ease-in;
+}
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.signup__box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 350px;
+    margin-top: 10px;
+    background-color:transparent ;
+    border: 3px solid  rgba(255, 255,255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    
+}
+.signup__box .input {
+    position: relative;
+    border-bottom: 2px solid white;
+    width: 200px;
+    align-items: center;
+    
+}
+
+
+.signup__box h1{
+    text-align: center;
+    top: 5px;
+    justify-content: center;
+}
+
+.signup__box button{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 70px;
+    height: 30px;
+}
+.input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+    font-size: 15px;
+    color: white;
+}
+input:focus ~ label,
+input:valid ~ label,
+input:valid ~ label
+{
+    top:-6px;
+}
+.input {
+    margin-top: 20px;
+}
+.input input{
+    width: 100%;
+    background: transparent;
+    height:35px;
+    padding: 0 35px 0 5px;
+    outline: none;
+    border: none;
+    font-size: 1em;
+}
+#button__box {
+    display: flex;
+    justify-content: center;  
+  
+}
+#button__box button{
+    width: 145px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 17px;
+    padding-top: 3px;
+    cursor: pointer;
+    transition: var(--smooth);
+    border-style: ridge;
+    border-width:  5px;
+    border-color: green;
+}
+#button__box button:hover{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 20px;}
+    
+#link{
+    display: flex;
+    justify-content: center;
+}
+#link a{
+    color: white;
+    margin-top: 5px;
+}
+#link a:hover{
+    color: lightskyblue;
+}
+
+

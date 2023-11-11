@@ -1,0 +1,127 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    background-image:url(https://i.ytimg.com/vi/oH1Sb1A0gKo/maxresdefault.jpg);
+}
+
+body {
+    font-family: "Roboto",sans-serif;
+}
+
+:root {
+    
+    --yellow:#EEEE00;
+    --red:#FF0000;
+    --blue:#33CCFF;
+    --blue-l:#99FFFF;
+    --gray:#4F4F4F;
+    --smooth: all .3s ease-in;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.login__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: fixed;
+    width: 60%;
+    height: 380px;
+    background-color: transparent;
+    border: 3px solid  rgba(255, 255,255, 0.5);
+    backdrop-filter:blur(10px);
+    border-radius: 15px;
+}
+.login__box h1{
+    text-align: center;
+    margin-top: 5px;
+    justify-content: center;
+    color: lightcoral;
+    font-size: 50px;
+}
+.login__box .input{
+    position: relative;
+    align-items: center;
+    width: 200px;
+    border-bottom: 2px solid white;
+    margin-top: 18px;
+}
+.login__box input[type="text"],input[type="password"]{
+    height: 40px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: lightskyblue;
+}
+.login__box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    transition: .5s;
+    pointer-events: none;
+    
+}
+input:focus ~ label,
+input:valid ~ label,
+input:valid ~ label{
+    top:-5px
+}
+.button__box{
+    display: flex;
+    justify-content: center;
+}
+
+
+.button__box button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 140px;
+    border-radius: 50px;
+    border: none;
+    background-color: #33CCFF;
+    color: black;
+}
+.button__box button:hover{
+    box-shadow: 0 0 5px rgb(8, 207, 242, 0.7),
+    0 0 25px  rgba(8, 207, 242, 0.7),
+    0 0 50px  rgba(8, 207, 242, 0.7);
+    height: 37px;
+    width: 135px;
+}
+#link{
+    display: flex;
+    justify-content: center;
+}
+#link a{
+    color: white;
+}
+#link a:hover{
+    color: yellow;
+}
+ #check input[type="checkbox"] {
+   font-size: 1em;
+   margin-top: 20px;
+ }
+
+ #check{
+    color: bisque;
+ }
+
+
+
